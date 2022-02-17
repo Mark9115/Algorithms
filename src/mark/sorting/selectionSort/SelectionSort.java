@@ -1,6 +1,7 @@
 package mark.sorting.selectionSort;
 
-import java.util.Random;
+import static mark.sorting.MainFeatures.createArray;
+import static mark.sorting.MainFeatures.print;
 
 public class SelectionSort {
     public static void main(String[] args) {
@@ -39,18 +40,4 @@ public class SelectionSort {
             array[i] = value;
         }
     }
-
-    public static void print(int[] array) {
-        for (int integer : array) {
-            System.out.print(integer + " ");
-        }
-    }
-
-    public static void createArray(int[] array) {
-        Random random = new Random();
-        for (int i = 0; i < array.length; i++) {
-            array[i] = random.nextInt(-100, 100);
-        }
-    }
-
 }
